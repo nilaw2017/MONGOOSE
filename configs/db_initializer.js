@@ -1,3 +1,4 @@
+// This is to initiate the DATABASE
 const DB_CONFIG = require("./db_config");
 
 const MONGOOSE = require("mongoose");
