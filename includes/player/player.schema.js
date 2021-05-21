@@ -1,11 +1,11 @@
 const MONGOOSE = require("mongoose");
 
 const UserSchema = new MONGOOSE.Schema ({
-    username : {
+    firstName : {
         type : String,
         
     },
-    email : {
+    lastName : {
         type : String,
         
     }

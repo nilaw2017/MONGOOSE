@@ -1,6 +1,6 @@
 require("./configs/db_initializer");
 const PLAYER_CONTROLLER = require("./includes/player/player.controller")
-const PORT = "9000"
+const PORT = "9009"
 
 const EXPRESS = require("express");
 const APP = EXPRESS();
