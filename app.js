@@ -1,10 +1,15 @@
 require("./configs/db_initializer");
+const PLAYER_CONTROLLER = require("./includes/player/player.controller")
 const PORT = "9000"
 
 const EXPRESS = require("express");
 const APP = EXPRESS();
 
+APP.use(EXPRESS.urlencoded({
+    extended : true
+}))
 
+APP.use("/player", PLAYER_CONTROLLER)
 
 APP.get( function( error, req, res) {
     res.json( {
